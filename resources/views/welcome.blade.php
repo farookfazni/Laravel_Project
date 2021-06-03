@@ -12,15 +12,19 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('node_modules/bootstrap/dist/js/app.js') }}" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/nav.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
+    <!-- <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"> -->
+    <link href="{{ asset('css/nav.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body id="page-top">
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         <!-- @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -82,11 +86,11 @@
                             </li>
                             @else
                             <li class=" nav-item active">
-                                    <a href="{{ route('login') }}" class="nav-link js-scroll-trigger"">Log in</a>
+                                <a href="{{ route('login') }}" class="nav-link js-scroll-trigger"">Log in</a>
                             </li>
                             @if (Route::has('register'))
                             <li class=" nav-item active">
-                                        <a href="{{ route('register') }}" class="nav-link js-scroll-trigger"">Register</a>
+                                <a href="{{ route('register') }}" class="nav-link js-scroll-trigger"">Register</a>
                             </li>
                             @endif
                             @endauth
