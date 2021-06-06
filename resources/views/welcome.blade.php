@@ -77,9 +77,9 @@
                                 <a class="nav-link js-scroll-trigger" href="live-test-updates.php">Live Updates</a>
                             </li>
 
-                            <li class="nav-item active">
+                            <!-- <li class="nav-item active">
                                 <a class="nav-link js-scroll-trigger" href="login.php">Admin</a>
-                            </li>
+                            </li> -->
                             @auth
                             <li class="nav-item active">
                                 <a href="{{ url('/home') }}" class="nav-link js-scroll-trigger"">Home</a>
